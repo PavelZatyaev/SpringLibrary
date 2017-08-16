@@ -26,6 +26,7 @@ public class RedirectController {
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String baseUrlRedirect(HttpServletRequest request, HttpServletResponse httpServletResponse) {
 // // //
+        //
         Page<Author> authors = authorService.getAll(0, 10, "fio", Sort.Direction.DESC);
 
         Author a = new Author();
